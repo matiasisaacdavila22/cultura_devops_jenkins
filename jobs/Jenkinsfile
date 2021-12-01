@@ -25,7 +25,7 @@ pipeline {
            sh "echo 'fase always'"
       }
       success {
-            bat "echo 'fase success'"
+            sh "echo 'fase success'"
         }
 
       failure {
