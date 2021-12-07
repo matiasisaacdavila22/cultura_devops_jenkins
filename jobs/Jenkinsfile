@@ -22,14 +22,14 @@ pipeline {
   post {
       always {          
           deleteDir()
-           sh "echo 'fase always'"
+           sh "echo 'se ejeccuta always'"
       }
       success {
-            sh "echo 'fase success'"
+            sh "echo 'se ejecuta solo si la tarea termina bien success'"
         }
 
       failure {
-            sh "echo 'fase failure'"
+            sh "echo 'se ejecuta solo si la tarea falla failure'"
       }
       
   }
